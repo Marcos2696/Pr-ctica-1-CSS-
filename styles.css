@@ -1,0 +1,101 @@
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: sans-serif ;
+    font-size: 1.3rem;
+    overflow-x: hidden; /*CON ESTO QUIERO QUE SE ME QUITE EL SCROLL QUE ME HA SALIDO EN HORIZONTAL(ha salido por el circulo de la derecha, el del fondo) PERO DEJAR VISIBLE EL SCROLL VERTICAL*/
+}
+.top-circle{
+    position: relative;
+    right: 300px;
+    bottom: 300px;
+}
+
+.bottom-circle{
+    position: relative;
+    bottom: 500px;
+    left: 1200px;
+   
+}
+
+.circle-styles{
+
+}
+
+.card{
+    position: relative;
+    bottom: 1700px;
+    height: 450px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto; /*LO CENTRAMOS ASI PORQUE ES UN ELEMENTO DE BLOQUE*/
+    background-color: white;
+    border-radius: 20px; /*REDONDEAR ESQUINAS*/
+    overflow: hidden; /*ESTO ES PORQUE EL HEADER DE LA TARJETA (card_header) SE DESBORDABA Y NOS TAPABA LAS ESQUINAS, ASI QUE AL PONER ESTO NOS ESCONDE LO QUE SE DESBORDA*/
+
+}
+.card_header{
+    position: relative;
+    text-align: center; /*CENTRADO*/
+}
+
+.patron{/*FONDO CABECERA*/
+    position: absolute; /*SE NOS COLOCA ARRIBA E IZQUIERDA DEL TODO*/
+    top: 0px;
+    left: 0px;
+    width: 100%; /*PARA HACERLO MAS GRANDE*/
+}
+
+.foto-perfil{
+    display: block; /*YO HE CENTRADO LA FOTO A MANO*/
+    position: relative;
+    top:80px;
+    left: 150px;
+    border-radius: 50%; /*BORDE REDONDO*/
+    border: 5px solid white; /*EL PROPIO BORDE*/
+    background-color: white; /*PARA SOLUCIONAR UN BORDE AZUL PEQUEÑO QUE SALÍA*/
+     
+}
+
+.card_body{ /*CUERPO DE LA TARJETA*/ 
+    position: absolute;
+    bottom: 170px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    
+    border-bottom: 2px solid rgb(0 0 0/ 0.1); /*ESTA ES LA BARRA SEPARADORA QUE HEMOS METIDO EN EL MEDIO DE LA TARJETA*/
+}
+
+.text_body{ /*DAR ESTILO A MI NOMBRE Y EDAD*/
+    font-size: 20px;
+}
+.age_text{ /*DAR ESTILO A MI EDAD*/
+    color: hsl(227, 10%, 46%);
+
+}
+.card_body2{/*DAR ESTILO A LA LOCALIDAD*/
+    font-size: 18px;
+    margin-top: -5px; 
+    color: hsl(227, 10%, 46%);
+}
+
+.card_footer{ /*PIE DE LA TARJETA*/
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    
+    /*PRIMERO HEMOS CENTRADO TODO EN LA PARTE DEL MEDIO*/
+
+}
+
+.card_stats{
+    display: inline-block; /*CON ESTO LO QUE HACEMOS ES SIGUE SIENDO UN ELEMENTO DE BLOQUE (sigue siendo un <div>) PERO SE NOS PONE UNO AL LADO DEL OTRO PERO SIN PERDER LAS PROPIEDADES DE BLQOUE PARA DARLE ANCHOS Y MARGENES.*/
+    /*POR CIERTO ESTAMOS CAMBIANDO LOS 3 CUADRADITOS A LA VEZ PORQUE LES HEMOS LLAMADO IGUAL*/
+    margin: 20px;
+    position: relative;
+    top: 16px;
+    text-align: center;
+    
+    
+}
